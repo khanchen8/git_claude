@@ -1,0 +1,21 @@
+{
+  "tasks": [
+    {
+      "id": "d17306ec",
+      "cron": "3,23,43 * * * *",
+      "prompt": "自动同步两个仓库到 GitHub：\n\n1. Claude 配置: cd ~/.claude && git add -A && (git diff --cached --quiet || (git commit -m \"auto sync: $(date '+%Y-%m-%d %H:%M')\" && git push))\n\n2. 项目仓库: cd \"d:/ClaudeChen/git\" && git add -A && (git diff --cached --quiet || (git commit -m \"auto sync: $(date '+%Y-%m-%d %H:%M')\" && git push))",
+      "createdAt": 1779688614229,
+      "recurring": true,
+      "createdBySessionId": "dbf4d76c-cf42-4e9b-842f-bd123c9f7675",
+      "createdByPid": 30904
+    },
+    {
+      "id": "379a5593",
+      "cron": "0 10 1 6 *",
+      "prompt": "提醒用户：claude-sync 和 git_claude 两个仓库的自动同步任务即将到期。询问是否需要续期 7 天，如果需要则重新创建 CronCreate 定时任务。",
+      "createdAt": 1779688684821,
+      "createdBySessionId": "dbf4d76c-cf42-4e9b-842f-bd123c9f7675",
+      "createdByPid": 30904
+    }
+  ]
+}
